@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For small pest control operators: each visit recorded on your phone with photos and chemicals applied, and the invoice sent from the visit.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,400..600&family=Geist+Mono:wght@400..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -75,71 +79,230 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header><div class="wrap">
   <div class="logo"><a href="index.html" data-ev="click_logo_home">Route Ticket</a></div>
-  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+  <nav class="top" aria-label="Main"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Record the visit, the chemicals and the photos — and the invoice goes out from the same screen</h1>
-    <p class="sub">For pest control operators with one route or one technician: each stop is recorded on the phone with the work done, the products and amounts applied and the photos, and the invoice is built from that visit and sent before you leave.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
-    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
-  </div>
-
-  <section id="what" data-view="features_view">
-    <h2>What you get</h2>
-    <div class="grid">
-      <div class="card"><b>Visit record</b><span>Target pest, areas treated, findings and photos for every stop.</span><br><a class="btn" href="price.html" data-ev="feature_visit">I need this</a></div>
-      <div class="card"><b>Chemical use</b><span>Product, amount and application site recorded with each visit.</span><br><a class="btn" href="price.html" data-ev="feature_chemical">I need this</a></div>
-      <div class="card"><b>Invoice from the visit</b><span>The invoice built from the visit and sent before you leave.</span><br><a class="btn" href="price.html" data-ev="feature_invoice">I need this</a></div>
-      <div class="card"><b>Route and recurring stops</b><span>Monthly and quarterly customers back on the route when they are due.</span><br><a class="btn" href="price.html" data-ev="feature_route">I need this</a></div>
+<main class="page">
+  <section class="hero" data-enter aria-labelledby="hero-h">
+    <div class="wrap">
+      <h1 id="hero-h">Every pest stop, down to the <span class="ly-word" data-words="chemicals.|photos.|invoice."><span>chemicals.</span></span></h1>
+      <div class="hero__foot">
+        <div class="hero__copy">
+          <p class="hero__lead">For pest control operators with <b>one route or one technician</b>: each stop is recorded on the phone with the work done, the products and amounts applied and the photos, and the invoice is built from that visit and sent before you leave.</p>
+          <div class="btn-row">
+            <a class="cta" href="price.html" data-ev="cta_click">I need this<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5 11 7l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
+          </div>
+        </div>
+        <dl class="hero__facts">
+          <div><dt>Each stop</dt><dd>Pest, areas, findings, photos</dd></div>
+          <div><dt>Chemical use</dt><dd>Product, amount, site</dd></div>
+          <div><dt>Invoice</dt><dd>Sent before you leave</dd></div>
+          <div><dt>Recurring</dt><dd>Monthly and quarterly</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
-  <section id="example" data-view="example_view">
-    <h2>Example (fictional data)</h2>
-    <p class="fine">One-technician pest control business with 14 stops on Tuesday. At a quarterly residential service, the technician records an exterior perimeter treatment, the product and amount, notes ant activity near the kitchen and adds two photos; the invoice reaches the homeowner by email before the truck leaves the street.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
+  <section id="what" class="ground-surface" data-view="features_view" aria-labelledby="what-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="what-h">What you get. <span class="muted">Four jobs finished at the stop, not in the truck at night.</span></h2>
+      </div>
+      <div class="tools">
+        <div class="card tool"><b>Visit record</b><span>Target pest, areas treated, findings and photos for every stop.</span><br><a class="btn" href="price.html" data-ev="feature_visit">I need this</a>
+          <div class="panel" aria-hidden="true">
+            <div class="frag">
+              <div class="fh">Stop 6 · Quarterly <span class="chip chip--ok">Saved</span></div>
+              <div class="ln"><span>Target pest</span><span>Ants</span></div>
+              <div class="ln"><span>Areas</span><span>Perimeter, kitchen</span></div>
+              <div class="ln"><span>Finding</span><span>Trail at back door</span></div>
+              <div class="thumbs"><span class="thumb"></span><span class="thumb"></span><span class="thumb thumb--add">+</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card tool"><b>Chemical use</b><span>Product, amount and application site recorded with each visit.</span><br><a class="btn" href="price.html" data-ev="feature_chemical">I need this</a>
+          <div class="panel" aria-hidden="true">
+            <div class="frag">
+              <div class="fh">Products applied <span class="chip">From your list</span></div>
+              <div class="ln"><span>Perimeter spray</span><span class="mono">2 gal mix</span></div>
+              <div class="ln"><span>Site</span><span>Exterior foundation</span></div>
+              <div class="ln"><span>Gel bait</span><span class="mono">4 placements</span></div>
+              <div class="ln"><span>Site</span><span>Under sink</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card tool"><b>Invoice from the visit</b><span>The invoice built from the visit and sent before you leave.</span><br><a class="btn" href="price.html" data-ev="feature_invoice">I need this</a>
+          <div class="panel" aria-hidden="true">
+            <div class="frag">
+              <div class="fh">Invoice <span class="send-state"><span class="chip a">Sending</span><span class="chip chip--ok b">Sent</span></span></div>
+              <div class="ln"><span>Quarterly service</span><span><i class="bar" style="width:44px"></i></span></div>
+              <div class="ln"><span>Interior add-on</span><span><i class="bar" style="width:34px"></i></span></div>
+              <div class="ln"><span>Tax</span><span><i class="bar" style="width:24px"></i></span></div>
+              <div class="ln"><span>To</span><span>Email and text</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="card tool"><b>Route and recurring stops</b><span>Monthly and quarterly customers back on the route when they are due.</span><br><a class="btn" href="price.html" data-ev="feature_route">I need this</a>
+          <div class="panel" aria-hidden="true">
+            <div class="frag">
+              <div class="fh">Tuesday route <span class="chip chip--due">2 due</span></div>
+              <ul class="stops">
+                <li class="done"><i></i><span>Maple Court</span><span class="mono">done</span></li>
+                <li class="now"><i></i><span>Harbor Lane</span><span class="mono">now</span></li>
+                <li><i></i><span>Ridge Road</span><span class="chip chip--due">quarterly</span></li>
+                <li><i></i><span>Cedar Deli</span><span class="chip chip--due">monthly</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="example" data-view="example_view" aria-labelledby="example-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="example-h">One stop, start to invoice. <span class="muted">An example with fictional data.</span></h2>
+      </div>
+      <div class="ex">
+        <div class="ex__text">
+          <p class="ex__tag">Example (fictional data)</p>
+          <p class="fine">One-technician pest control business with 14 stops on Tuesday. At a quarterly residential service, the technician records an exterior perimeter treatment, the product and amount, notes ant activity near the kitchen and adds two photos; the invoice reaches the homeowner by email before the truck leaves the street.</p>
+          <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 7h9M7.5 3.5 11 7l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="app-frame" role="img" aria-label="The visit screen for a quarterly residential stop: exterior perimeter treatment, the product and amount, ant activity near the kitchen, two photos, and the invoice emailed to the homeowner and opened">
+          <div class="app" aria-hidden="true">
+            <div class="app__top"><span><b>Route Ticket</b> · Tuesday</span><span>Stop 6 of 14</span></div>
+            <div class="frag">
+              <div class="fh">Visit · Quarterly residential <span class="chip chip--ok">Done</span></div>
+              <div class="ln"><span>Service</span><span>Exterior perimeter</span></div>
+              <div class="ln"><span>Product</span><span>Perimeter spray</span></div>
+              <div class="ln"><span>Amount</span><span class="mono">2 gal mix</span></div>
+              <div class="ln"><span>Site</span><span>Foundation, entries</span></div>
+              <div class="note">Ant activity near the kitchen. Seal gap under back door.</div>
+              <div class="thumbs"><span class="thumb"></span><span class="thumb"></span></div>
+            </div>
+            <div class="frag mail">
+              <div class="fh">Invoice to homeowner <span class="chip chip--ok">Opened</span></div>
+              <div class="who"><span class="avatar">JR</span><span>J. Rivera · by email</span></div>
+              <div class="ln"><span>Quarterly service</span><span><i class="bar" style="width:52px"></i></span></div>
+              <div class="ln"><span>Tax</span><span><i class="bar" style="width:28px"></i></span></div>
+              <ul class="timeline">
+                <li>Visit saved on site</li>
+                <li>Invoice sent from the visit</li>
+                <li>Opened by the homeowner</li>
+                <li class="wait">Paid</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>How it works</h2>
-    <p>A small pest control business runs on visits: a route of residential and commercial stops, many of them recurring monthly or quarterly. After every stop there are two things to finish — a record of what was done and which products were applied, and an invoice for the customer.</p>
-    <p>Keeping a complete record of chemical use matters in pest control. The product, the amount, where it was applied and when are the details a customer, a property manager or a state inspector may ask for. When those records live on paper tickets in the truck, they are easy to lose and hard to search.</p>
-    <p>The service records the visit on the technician's phone. At each stop you note the target pest, the areas treated, what you found and the recommendations for the customer, and you add photos. The record takes a minute and works even when the signal is weak.</p>
-    <p>With each visit you record the products used from your list: the product name, the amount applied and the application site. The chemical use record builds itself from the visits, and you can pull it up by customer, by product or by date whenever it is needed.</p>
-    <p>The invoice is built from the same visit: the service, any add-ons and the tax. It goes to the customer by email or text before you leave the property, and you see when it is opened and paid. Recurring customers can be billed the same way every time they are serviced.</p>
-    <p>Recurring customers come back onto the route when their next service is due, so a quarterly stop is not forgotten. The day's route shows every stop in order, and a stop that was skipped stays on the list until it is done or moved.</p>
-    <p>Every customer has a history: past visits, products applied, findings, photos and invoices. When a customer calls about activity between services, you see what was done last time before you go back.</p>
-    <p>Getting started takes one evening: your business details, your product list, your service prices and your recurring customers from a spreadsheet. The next morning the route is on your phone.</p>
-    <p>At the end of the month you see the visits done, the products used, the amounts invoiced and what is still unpaid — without going through a stack of tickets.</p>
-    <p>The service is built for owner-operators and small pest control businesses with one route or one technician. It is in preparation: we are checking whether operators need it before it is built. The operator remains responsible for applying products by their label and for the records their state requires.</p>
+  <section id="opis" class="ground-surface" aria-labelledby="opis-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="opis-h">How it works</h2>
+      </div>
+      <div class="cols">
+        <p>A small pest control business runs on visits: a route of residential and commercial stops, many of them recurring monthly or quarterly. After every stop there are two things to finish — a record of what was done and which products were applied, and an invoice for the customer.</p>
+        <p>Keeping a complete record of chemical use matters in pest control. The product, the amount, where it was applied and when are the details a customer, a property manager or a state inspector may ask for. When those records live on paper tickets in the truck, they are easy to lose and hard to search.</p>
+        <p>The service records the visit on the technician's phone. At each stop you note the target pest, the areas treated, what you found and the recommendations for the customer, and you add photos. The record takes a minute and works even when the signal is weak.</p>
+        <p>With each visit you record the products used from your list: the product name, the amount applied and the application site. The chemical use record builds itself from the visits, and you can pull it up by customer, by product or by date whenever it is needed.</p>
+        <p>The invoice is built from the same visit: the service, any add-ons and the tax. It goes to the customer by email or text before you leave the property, and you see when it is opened and paid. Recurring customers can be billed the same way every time they are serviced.</p>
+        <p>Recurring customers come back onto the route when their next service is due, so a quarterly stop is not forgotten. The day's route shows every stop in order, and a stop that was skipped stays on the list until it is done or moved.</p>
+        <p>Every customer has a history: past visits, products applied, findings, photos and invoices. When a customer calls about activity between services, you see what was done last time before you go back.</p>
+        <p>Getting started takes one evening: your business details, your product list, your service prices and your recurring customers from a spreadsheet. The next morning the route is on your phone.</p>
+        <p>At the end of the month you see the visits done, the products used, the amounts invoiced and what is still unpaid — without going through a stack of tickets.</p>
+        <p>The service is built for owner-operators and small pest control businesses with one route or one technician. It is in preparation: we are checking whether operators need it before it is built. The operator remains responsible for applying products by their label and for the records their state requires.</p>
+      </div>
+    </div>
   </section>
-  <section id="faq">
-    <h2>Questions</h2>
-    <h3>Who is it for?</h3>
-    <p>Owner-operators and small pest control businesses with one route or one technician.</p>
-    <h3>Are chemical use records kept?</h3>
-    <p>Yes, product, amount and application site are recorded with every visit and can be pulled up by customer, product or date.</p>
-    <h3>Can I invoice from the visit?</h3>
-    <p>Yes, the invoice is built from the visit and sent by email or text before you leave.</p>
-    <h3>Does it handle recurring customers?</h3>
-    <p>Yes, monthly and quarterly customers come back onto the route when they are due.</p>
-    <h3>Can I use it already?</h3>
-    <p>Not yet. The service is in preparation, and we are checking whether operators need it.</p>
+  <section id="faq" aria-labelledby="faq-h">
+    <div class="wrap faq">
+      <div class="section-head">
+        <h2 id="faq-h">Questions</h2>
+      </div>
+      <div class="faq__list">
+        <h3>Who is it for?</h3>
+        <p>Owner-operators and small pest control businesses with one route or one technician.</p>
+        <h3>Are chemical use records kept?</h3>
+        <p>Yes, product, amount and application site are recorded with every visit and can be pulled up by customer, product or date.</p>
+        <h3>Can I invoice from the visit?</h3>
+        <p>Yes, the invoice is built from the visit and sent by email or text before you leave.</p>
+        <h3>Does it handle recurring customers?</h3>
+        <p>Yes, monthly and quarterly customers come back onto the route when they are due.</p>
+        <h3>Can I use it already?</h3>
+        <p>Not yet. The service is in preparation, and we are checking whether operators need it.</p>
+      </div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Add your business</h2>
-    <p><label>Stops per week<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 25</option><option>25–60</option><option>60–120</option><option>More than 120</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+  <section id="start" class="ground-ink" data-view="start_view" aria-labelledby="start-h">
+    <div class="wrap">
+      <h2 id="start-h" class="close-word" data-liquid>Add your <span>business.</span></h2>
+      <div class="start-form">
+        <p class="start-form__lead">Tell us how many stops you run in a week, and see the plans built for one route or one technician.</p>
+        <div class="start-form__row">
+          <label>Stops per week<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 25</option><option>25–60</option><option>60–120</option><option>More than 120</option></select></label>
+          <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
+        </div>
+      </div>
+    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <filter id="liquid" x="-5%" y="-10%" width="110%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="3" result="n"/>
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </svg>
   </section>
-</div>
+</main>
 
 <footer><div class="wrap">
-  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="footer__mark">Route Ticket</p>
   <p class="muted">Visit records and invoices for your business. The operator remains responsible for label use and the records their state requires.</p>
+  <p class="legal"><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
 </div></footer>
 
+<script>
+(function () {
+  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (still) return;
+  /* the live word: two rounds, then it rests on the first word */
+  var w = document.querySelector('.ly-word');
+  if (w) {
+    var words = w.getAttribute('data-words').split('|'), cur = w.firstElementChild, i = 0, steps = words.length * 2;
+    for (var k = 1; k < words.length; k++) { var s = document.createElement('span'); s.textContent = words[k]; s.className = 'is-next'; s.setAttribute('aria-hidden', 'true'); w.appendChild(s); }
+    var spans = w.children;
+    var t = setInterval(function () {
+      var next = spans[(i + 1) % spans.length];
+      spans[i % spans.length].className = 'is-out';
+      next.className = '';
+      i++;
+      setTimeout(function () { for (var j = 0; j < spans.length; j++) if (spans[j] !== next) spans[j].className = 'is-next'; }, 650);
+      if (i >= steps) clearInterval(t);
+    }, 2200);
+  }
+  /* liquid type: the close headline ripples where the pointer crosses it and settles within a second */
+  var h = document.querySelector('[data-liquid]'), f = document.getElementById('liquid');
+  if (h && f && matchMedia('(hover: hover)').matches) {
+    var map = f.querySelector('feDisplacementMap'), turb = f.querySelector('feTurbulence'), amt = 0, raf = 0;
+    var tick = function () {
+      amt *= 0.9;
+      map.setAttribute('scale', amt.toFixed(1));
+      if (amt > 0.3) raf = requestAnimationFrame(tick); else { amt = 0; raf = 0; h.style.filter = ''; }
+    };
+    h.addEventListener('pointermove', function (e) {
+      var r = h.getBoundingClientRect();
+      turb.setAttribute('baseFrequency', (0.008 + 0.01 * (e.clientX - r.left) / r.width).toFixed(4) + ' ' + (0.02 + 0.02 * (e.clientY - r.top) / r.height).toFixed(4));
+      amt = Math.min(28, amt + 4);
+      h.style.filter = 'url(#liquid)';
+      if (!raf) raf = requestAnimationFrame(tick);
+    });
+  }
+})();
+</script>
 </body>
 </html>
