@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US" data-type="software" data-radius="soft" data-ground="sand" data-buttons="solid" data-motion>
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <!-- Google Tag Manager -->
@@ -15,21 +15,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="For small pest control operators: each visit recorded on your phone with photos and chemicals applied, and the invoice sent from the visit.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="taste/system.css">
-<link rel="stylesheet" href="taste/cards.css">
-<link rel="stylesheet" href="taste/motion.css">
-<link rel="stylesheet" href="taste/layout.css">
-<link rel="stylesheet" href="taste/ui/base.css">
-<link rel="stylesheet" href="taste/ui/checklist/fragment.css">
-<link rel="stylesheet" href="taste/ui/search/fragment.css">
-<link rel="stylesheet" href="taste/ui/notify/fragment.css">
-<link rel="stylesheet" href="taste/ui/calendar/fragment.css">
-<link rel="stylesheet" href="taste/ui/window/fragment.css">
-<link rel="stylesheet" href="taste/ui/doc/fragment.css">
-<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -87,327 +72,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCHRGHRR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<!-- type: software (site-kind software)
-     deal: hero word; palette: the smokes' house colours, font Inter, light everywhere (brief 4; :root in variant.css); radius soft;
-     buttons solid; ground sand (its tokens set light in variant.css); nav plain bar; rhythm surface-pairs; close type; footer columns; mark wordmark;
-     moment: liquid type on the close headline. Library: taste/ (system, cards, motion, layout, ui fragments),
-     unchanged copies; no library scripts. -->
 
-<div class="nav" role="banner">
-  <div class="wrap nav__bar">
-    <a class="nav__logo" href="index.html" data-ev="click_logo_home">Route Ticket</a>
-    <nav class="nav__links" aria-label="Main">
-      <div class="nav__item"><a class="nav__link" href="#what" data-ev="click_nav_what">What you get</a></div>
-      <div class="nav__item"><a class="nav__link" href="price.html" data-ev="click_nav_price">Price</a></div>
-      <div class="nav__item"><a class="nav__link" href="#example" data-ev="click_nav_example">Example</a></div>
-    </nav>
-    <div class="nav__actions">
-      <a class="btn btn--primary" href="#start" data-ev="click_nav_start">Start</a>
-    </div>
+<header><div class="wrap">
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Route Ticket</a></div>
+  <nav class="top"><a href="#what" data-ev="click_nav_what">What you get</a><a href="price.html" data-ev="click_nav_price">Price</a><a href="#example" data-ev="click_nav_example">Example</a><a href="#start" data-ev="click_nav_start">Start</a></nav>
+</div></header>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Record the visit, the chemicals and the photos — and the invoice goes out from the same screen</h1>
+    <p class="sub">For pest control operators with one route or one technician: each stop is recorded on the phone with the work done, the products and amounts applied and the photos, and the invoice is built from that visit and sent before you leave.</p>
+    <a class="cta" href="price.html" data-ev="cta_click">I need this</a>
+    <p class="cta-note">Service in preparation · No payment is accepted on this page</p>
   </div>
-</div>
 
-<main id="top">
-  <section class="hero hero--word" data-enter aria-labelledby="hero-h">
-    <div class="wrap"><div class="hero-text hero__in">
-      <h1 id="hero-h">Every pest stop, down to the <span class="ly-word" data-words="chemicals.|photos.|invoice."><span>chemicals.</span></span></h1>
-      <div class="grid hero__foot">
-        <div class="span-6 stack-4">
-          <p class="hero__lead">For pest control operators with <b>one route or one technician</b>: each stop is recorded on the phone with the work done, the products and amounts applied and the photos, and the invoice is built from that visit and sent before you leave.</p>
-          <div class="btn-row"><a class="btn btn--primary" href="price.html" data-ev="cta_click">I need this<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a></div>
-          <p class="t-small muted">Service in preparation · No payment is accepted on this page</p>
-        </div>
-        <dl class="hero__facts hero__facts--col span-5 start-8">
-          <div><dt>Each stop</dt><dd>Pest, areas, findings, photos</dd></div>
-          <div><dt>Chemical use</dt><dd>Product, amount, site</dd></div>
-          <div><dt>Invoice</dt><dd>Sent before you leave</dd></div>
-          <div><dt>Recurring</dt><dd>Monthly and quarterly</dd></div>
-        </dl>
-      </div>
-    </div></div>
-  </section>
-
-  <section id="what" class="ground-surface g2" data-view="features_view" aria-labelledby="what-h">
-    <div class="wrap">
-      <div class="group">
-        <div class="section-head">
-          <h2 id="what-h">What you get. <span class="muted">Four jobs finished at the stop, not in the truck at night.</span></h2>
-        </div>
-        <div class="grid">
-          <article class="tile span-6">
-            <div class="panel">
-              <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:340px;--ay:32px">
-                <div class="ui ui-panel ui-checks" data-ui="checklist">
-                  <div class="ui-checks__head"><div class="ui-title">Stop 6 · Quarterly</div><span class="ui-spacer"></span><div class="ui-meta">4 of 5</div></div>
-                  <div class="ui-checks__bar"><i style="--k:0.8"></i></div>
-                  <ul class="ui-checks__list">
-                    <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Target pest: ants</span></li>
-                    <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Areas: perimeter, kitchen</span></li>
-                    <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Finding: trail at back door</span></li>
-                    <li class="ui-check is-done"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Two photos added</span></li>
-                    <li class="ui-check"><span class="ui-check__box"><svg viewBox="0 0 16 16"><path d="m4.5 8.2 2.3 2.3 4.7-5"/></svg></span><span class="ui-check__label">Advice for the customer</span></li>
-                  </ul>
-                </div>
-              </div></div>
-            </div>
-            <div class="tile__head"><h3>Visit record</h3></div>
-            <p>Target pest, areas treated, findings and photos for every stop.</p>
-            <div class="btn-row"><a class="btn btn--secondary" href="price.html" data-ev="feature_visit">I need this</a></div>
-          </article>
-          <article class="tile span-6">
-            <div class="panel">
-              <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:380px;--ay:32px">
-                <div class="ui ui-panel ui-search" data-ui="search">
-                  <div class="ui-search__field">
-                    <svg class="ui-icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg>
-                    <span class="ui-search__q"><span>perimeter spray</span><i class="ui-search__caret"></i></span>
-                    <kbd class="ui-search__kbd">Ctrl K</kbd>
-                  </div>
-                  <div class="ui-search__group">Chemical use</div>
-                  <ul class="ui-search__list">
-                    <li class="ui-search__row is-sel"><span class="ui-search__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M4 2.5h5l3 3v8H4z"/><path d="M9 2.5v3h3"/></svg></span><span class="ui-search__t"><b>Perimeter spray</b>, 2 gal mix, foundation</span><span class="ui-search__m">Maple Court</span></li>
-                    <li class="ui-search__row"><span class="ui-search__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M4 2.5h5l3 3v8H4z"/><path d="M9 2.5v3h3"/></svg></span><span class="ui-search__t"><b>Perimeter spray</b>, entries and gaps</span><span class="ui-search__m">Harbor Lane</span></li>
-                    <li class="ui-search__row"><span class="ui-search__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M4 2.5h5l3 3v8H4z"/><path d="M9 2.5v3h3"/></svg></span><span class="ui-search__t">Gel bait, 4 placements, under sink</span><span class="ui-search__m">Cedar Deli</span></li>
-                  </ul>
-                  <div class="ui-search__foot"><span>By customer, product or date</span></div>
-                </div>
-              </div></div>
-            </div>
-            <div class="tile__head"><h3>Chemical use</h3></div>
-            <p>Product, amount and application site recorded with each visit.</p>
-            <div class="btn-row"><a class="btn btn--secondary" href="price.html" data-ev="feature_chemical">I need this</a></div>
-          </article>
-        </div>
-      </div>
-      <div class="grid">
-        <article class="tile span-6">
-          <div class="panel">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:380px;--ay:32px">
-              <div class="ui ui-notify" data-ui="notify">
-                <ul class="ui-notify__list">
-                  <li class="ui-note"><span class="ui-avatar ui-note__av" data-tone="2">JR</span><span class="ui-note__text"><span class="ui-note__title">Invoice sent to J. Rivera<time>now</time></span><span class="ui-note__body">Quarterly service, by email and text</span></span><span class="ui-btn ui-btn--sm ui-note__btn">Open</span></li>
-                  <li class="ui-note"><span class="ui-note__ico"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg></span><span class="ui-note__text"><span class="ui-note__title">Visit saved on site<time>2m</time></span><span class="ui-note__body">Stop 6 of 14, Harbor Lane</span></span></li>
-                  <li class="ui-note"><span class="ui-avatar ui-note__av" data-tone="4">MC</span><span class="ui-note__text"><span class="ui-note__title">Maple Court opened the invoice<time>1h</time></span><span class="ui-note__body">Monthly service, interior add-on</span></span></li>
-                </ul>
-              </div>
-            </div></div>
-          </div>
-          <div class="tile__head"><h3>Invoice from the visit</h3></div>
-          <p>The invoice built from the visit and sent before you leave.</p>
-          <div class="btn-row"><a class="btn btn--secondary" href="price.html" data-ev="feature_invoice">I need this</a></div>
-        </article>
-        <article class="tile span-6">
-          <div class="panel">
-            <div class="stage stage--fade-b"><div class="at-rise fit" style="--fit-max:380px;--ay:32px">
-              <div class="ui ui-panel ui-calendar" data-ui="calendar">
-                <div class="ui-cal__head">
-                  <div class="ui-cal__month">Route <span>this month</span></div>
-                  <span class="ui-spacer"></span>
-                  <span class="ui-chip ui-chip--plain ui-chip--ink">2 due this week</span>
-                </div>
-                <div class="ui-cal__events">
-                  <div class="ui-cal__ev is-now">
-                    <span class="ui-cal__date"><b>Tu</b><i>now</i></span>
-                    <span class="ui-cal__evtext"><span class="ui-cal__evtitle">Ridge Road</span><span class="ui-cal__evsub">Quarterly service due</span></span>
-                  </div>
-                  <div class="ui-cal__ev">
-                    <span class="ui-cal__date"><b>We</b><i>next</i></span>
-                    <span class="ui-cal__evtext"><span class="ui-cal__evtitle">Cedar Deli</span><span class="ui-cal__evsub">Monthly service due</span></span>
-                  </div>
-                  <div class="ui-cal__ev">
-                    <span class="ui-cal__date"><b>Fr</b><i>later</i></span>
-                    <span class="ui-cal__evtext"><span class="ui-cal__evtitle">Willow Street</span><span class="ui-cal__evsub">Skipped stop, still on the list</span></span>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-          </div>
-          <div class="tile__head"><h3>Route and recurring stops</h3></div>
-          <p>Monthly and quarterly customers back on the route when they are due.</p>
-          <div class="btn-row"><a class="btn btn--secondary" href="price.html" data-ev="feature_route">I need this</a></div>
-        </article>
-      </div>
+  <section id="what" data-view="features_view">
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><b>Visit record</b><span>Target pest, areas treated, findings and photos for every stop.</span><br><a class="btn" href="price.html" data-ev="feature_visit">I need this</a></div>
+      <div class="card"><b>Chemical use</b><span>Product, amount and application site recorded with each visit.</span><br><a class="btn" href="price.html" data-ev="feature_chemical">I need this</a></div>
+      <div class="card"><b>Invoice from the visit</b><span>The invoice built from the visit and sent before you leave.</span><br><a class="btn" href="price.html" data-ev="feature_invoice">I need this</a></div>
+      <div class="card"><b>Route and recurring stops</b><span>Monthly and quarterly customers back on the route when they are due.</span><br><a class="btn" href="price.html" data-ev="feature_route">I need this</a></div>
     </div>
   </section>
 
-  <section id="example" data-view="example_view" aria-labelledby="example-h">
-    <div class="wrap">
-      <div class="grid">
-        <div class="span-5"><h2 id="example-h">One stop, start to invoice. <span class="muted">An example with fictional data.</span></h2></div>
-        <div class="span-6 start-7 stack-4">
-          <p>One-technician pest control business with 14 stops on Tuesday. At a quarterly residential service, the technician records an exterior perimeter treatment, the product and amount, notes ant activity near the kitchen and adds two photos; the invoice reaches the homeowner by email before the truck leaves the street.</p>
-          <a class="link" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
-        </div>
-      </div>
-      <div class="ui app fill" role="img" aria-label="The Tuesday route beside the open visit for a quarterly residential stop: exterior perimeter treatment, the product and amount, ant activity near the kitchen, two photos, and the invoice emailed to the homeowner and opened">
-        <div class="app__pane app__pane--list" aria-hidden="true">
-          <div class="ui ui-panel ui-win" data-ui="window">
-            <div class="ui-win__bar">
-              <span class="ui-dots"><i></i><i></i><i></i></span>
-              <span class="ui-win__crumb">Route Ticket <i>/</i> <b>Tuesday</b></span>
-              <span class="ui-spacer"></span>
-              <span class="ui-win__search"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3 3"/></svg><span class="ui-win__ph">Search</span><span class="ui-kbd">/</span></span>
-            </div>
-            <div class="ui-win__body">
-              <div class="ui-win__side">
-                <span class="ui-win__nav is-on"><svg class="ui-icon" viewBox="0 0 16 16"><path d="M2.5 9h3l1 1.5h3l1-1.5h3"/><path d="M2.5 9 4 3.5h8L13.5 9v3.5h-11z"/></svg>Today<em>14</em></span>
-                <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></svg>Due<em>3</em></span>
-                <span class="ui-win__nav"><svg class="ui-icon" viewBox="0 0 16 16"><path d="m3.5 8.4 2.8 2.8 6.2-6.4"/></svg>Done</span>
-                <span class="ui-win__label">Lists</span>
-                <span class="ui-win__nav"><span class="ui-win__hash">#</span>Customers</span>
-                <span class="ui-win__nav"><span class="ui-win__hash">#</span>Products</span>
-              </div>
-              <div class="ui-win__main">
-                <div class="ui-win__cols"><span>Stop</span><span>Service</span><span>Status</span><span>No.</span></div>
-                <ul class="ui-win__rows">
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="1">MC</span><span class="ui-win__who">Maple Court</span><span class="ui-win__sub">Quarterly perimeter</span><span class="ui-win__st is-done">Done</span><span class="ui-win__age">5</span></li>
-                  <li class="ui-win__row is-sel"><span class="ui-avatar" data-tone="3">JR</span><span class="ui-win__who">Harbor Lane</span><span class="ui-win__sub">Quarterly residential</span><span class="ui-win__st is-you">Invoiced</span><span class="ui-win__age">6</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">RR</span><span class="ui-win__who">Ridge Road</span><span class="ui-win__sub">Quarterly, interior add-on</span><span class="ui-win__st">Next</span><span class="ui-win__age">7</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="2">CD</span><span class="ui-win__who">Cedar Deli</span><span class="ui-win__sub">Monthly, gel bait</span><span class="ui-win__st">Due</span><span class="ui-win__age">8</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="5">OP</span><span class="ui-win__who">Oak Park Dental</span><span class="ui-win__sub">Monthly perimeter</span><span class="ui-win__st">Due</span><span class="ui-win__age">9</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="1">WS</span><span class="ui-win__who">Willow Street</span><span class="ui-win__sub">Rodent check</span><span class="ui-win__st">Due</span><span class="ui-win__age">10</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="3">PB</span><span class="ui-win__who">Pine Bluff</span><span class="ui-win__sub">Quarterly residential</span><span class="ui-win__st">Due</span><span class="ui-win__age">11</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="4">LS</span><span class="ui-win__who">Lake Shore Cafe</span><span class="ui-win__sub">Monthly, kitchen</span><span class="ui-win__st">Due</span><span class="ui-win__age">12</span></li>
-                  <li class="ui-win__row"><span class="ui-avatar" data-tone="2">BM</span><span class="ui-win__who">Birch Mews</span><span class="ui-win__sub">Termite inspection</span><span class="ui-win__st">Due</span><span class="ui-win__age">13</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="app__pane app__pane--open" aria-hidden="true">
-          <div class="ui ui-doc" data-ui="doc">
-            <article class="ui-doc__page">
-              <div class="ui-doc__label">Stop 6 of 14 · Quarterly residential · Done</div>
-              <div class="ui-doc__title">Visit record, Harbor Lane</div>
-              <div class="ui-doc__text">Service: exterior perimeter treatment, foundation and entries.</div>
-              <div class="ui-doc__text">Product: perimeter spray, <mark class="ui-doc__mark is-on">2 gal mix</mark>, applied at the foundation and entries.</div>
-              <div class="ui-doc__text">Finding: ant activity near the kitchen. Seal the gap under the back door.</div>
-              <div class="ui-doc__text">Photos: two added, back door and kitchen trail.</div>
-              <div class="ui-doc__text">Invoice: quarterly service and tax, built from this visit.</div>
-            </article>
-            <aside class="ui-doc__note ui-panel is-on">
-              <div class="ui-doc__kind"><span class="ui-doc__dot"></span><span>Invoice opened</span></div>
-              <div class="ui-doc__msg">Sent to J. Rivera by email from the visit.</div>
-              <div class="ui-doc__where">Paid: waiting</div>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </div>
+  <section id="example" data-view="example_view">
+    <h2>Example (fictional data)</h2>
+    <p class="fine">One-technician pest control business with 14 stops on Tuesday. At a quarterly residential service, the technician records an exterior perimeter treatment, the product and amount, notes ant activity near the kitchen and adds two photos; the invoice reaches the homeowner by email before the truck leaves the street.</p>
+    <a class="cta" href="price.html" data-ev="click_cta_after_example">Choose your plan</a>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis" class="ground-surface g2" aria-labelledby="opis-h">
-    <div class="wrap">
-      <div class="group">
-        <div class="section-head">
-          <h2 id="opis-h">How it works</h2>
-        </div>
-        <div class="grid">
-          <p class="span-6">A small pest control business runs on visits: a route of residential and commercial stops, many of them recurring monthly or quarterly. After every stop there are two things to finish — a record of what was done and which products were applied, and an invoice for the customer.</p>
-          <p class="span-6">Keeping a complete record of chemical use matters in pest control. The product, the amount, where it was applied and when are the details a customer, a property manager or a state inspector may ask for. When those records live on paper tickets in the truck, they are easy to lose and hard to search.</p>
-          <p class="span-6">The service records the visit on the technician's phone. At each stop you note the target pest, the areas treated, what you found and the recommendations for the customer, and you add photos. The record takes a minute and works even when the signal is weak.</p>
-          <p class="span-6">With each visit you record the products used from your list: the product name, the amount applied and the application site. The chemical use record builds itself from the visits, and you can pull it up by customer, by product or by date whenever it is needed.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <p class="span-6">The invoice is built from the same visit: the service, any add-ons and the tax. It goes to the customer by email or text before you leave the property, and you see when it is opened and paid. Recurring customers can be billed the same way every time they are serviced.</p>
-        <p class="span-6">Recurring customers come back onto the route when their next service is due, so a quarterly stop is not forgotten. The day's route shows every stop in order, and a stop that was skipped stays on the list until it is done or moved.</p>
-        <p class="span-6">Every customer has a history: past visits, products applied, findings, photos and invoices. When a customer calls about activity between services, you see what was done last time before you go back.</p>
-        <p class="span-6">Getting started takes one evening: your business details, your product list, your service prices and your recurring customers from a spreadsheet. The next morning the route is on your phone.</p>
-        <p class="span-6">At the end of the month you see the visits done, the products used, the amounts invoiced and what is still unpaid — without going through a stack of tickets.</p>
-        <p class="span-6">The service is built for owner-operators and small pest control businesses with one route or one technician. It is in preparation: we are checking whether operators need it before it is built. The operator remains responsible for applying products by their label and for the records their state requires.</p>
-      </div>
-    </div>
+  <section id="opis">
+    <h2>How it works</h2>
+    <p>A small pest control business runs on visits: a route of residential and commercial stops, many of them recurring monthly or quarterly. After every stop there are two things to finish — a record of what was done and which products were applied, and an invoice for the customer.</p>
+    <p>Keeping a complete record of chemical use matters in pest control. The product, the amount, where it was applied and when are the details a customer, a property manager or a state inspector may ask for. When those records live on paper tickets in the truck, they are easy to lose and hard to search.</p>
+    <p>The service records the visit on the technician's phone. At each stop you note the target pest, the areas treated, what you found and the recommendations for the customer, and you add photos. The record takes a minute and works even when the signal is weak.</p>
+    <p>With each visit you record the products used from your list: the product name, the amount applied and the application site. The chemical use record builds itself from the visits, and you can pull it up by customer, by product or by date whenever it is needed.</p>
+    <p>The invoice is built from the same visit: the service, any add-ons and the tax. It goes to the customer by email or text before you leave the property, and you see when it is opened and paid. Recurring customers can be billed the same way every time they are serviced.</p>
+    <p>Recurring customers come back onto the route when their next service is due, so a quarterly stop is not forgotten. The day's route shows every stop in order, and a stop that was skipped stays on the list until it is done or moved.</p>
+    <p>Every customer has a history: past visits, products applied, findings, photos and invoices. When a customer calls about activity between services, you see what was done last time before you go back.</p>
+    <p>Getting started takes one evening: your business details, your product list, your service prices and your recurring customers from a spreadsheet. The next morning the route is on your phone.</p>
+    <p>At the end of the month you see the visits done, the products used, the amounts invoiced and what is still unpaid — without going through a stack of tickets.</p>
+    <p>The service is built for owner-operators and small pest control businesses with one route or one technician. It is in preparation: we are checking whether operators need it before it is built. The operator remains responsible for applying products by their label and for the records their state requires.</p>
   </section>
-  <section id="faq" aria-labelledby="faq-h">
-    <div class="wrap grid">
-      <div class="section-head span-5">
-        <h2 id="faq-h">Questions</h2>
-      </div>
-      <div class="faq span-6 start-7">
-        <div class="faq__item"><h3>Who is it for?</h3><p>Owner-operators and small pest control businesses with one route or one technician.</p></div>
-        <div class="faq__item"><h3>Are chemical use records kept?</h3><p>Yes, product, amount and application site are recorded with every visit and can be pulled up by customer, product or date.</p></div>
-        <div class="faq__item"><h3>Can I invoice from the visit?</h3><p>Yes, the invoice is built from the visit and sent by email or text before you leave.</p></div>
-        <div class="faq__item"><h3>Does it handle recurring customers?</h3><p>Yes, monthly and quarterly customers come back onto the route when they are due.</p></div>
-        <div class="faq__item"><h3>Can I use it already?</h3><p>Not yet. The service is in preparation, and we are checking whether operators need it.</p></div>
-      </div>
-    </div>
+  <section id="faq">
+    <h2>Questions</h2>
+    <h3>Who is it for?</h3>
+    <p>Owner-operators and small pest control businesses with one route or one technician.</p>
+    <h3>Are chemical use records kept?</h3>
+    <p>Yes, product, amount and application site are recorded with every visit and can be pulled up by customer, product or date.</p>
+    <h3>Can I invoice from the visit?</h3>
+    <p>Yes, the invoice is built from the visit and sent by email or text before you leave.</p>
+    <h3>Does it handle recurring customers?</h3>
+    <p>Yes, monthly and quarterly customers come back onto the route when they are due.</p>
+    <h3>Can I use it already?</h3>
+    <p>Not yet. The service is in preparation, and we are checking whether operators need it.</p>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" class="ground-surface" data-view="start_view" aria-labelledby="start-h">
-    <div class="wrap">
-      <div class="closing__cta close--type">
-        <div class="section-head">
-          <h2 id="start-h" data-liquid>Add your business.</h2>
-          <p>Tell us how many stops you run in a week, and see the plans built for one route or one technician.</p>
-        </div>
-        <div class="grid">
-          <div class="field span-6"><label for="f-stops">Stops per week</label><select id="f-stops" data-ev-focus="form_start"><option value="">— please choose —</option><option>Up to 25</option><option>25–60</option><option>60–120</option><option>More than 120</option></select></div>
-        </div>
-        <a class="btn btn--primary btn--xl btn--wide" href="price.html" data-ev="form_submit_click">Start<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
-      </div>
-    </div>
-    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-      <filter id="liquid" x="-5%" y="-10%" width="110%" height="120%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.03" numOctaves="2" seed="3" result="n"/>
-        <feDisplacementMap in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-    </svg>
+  <section id="start" data-view="start_view">
+    <h2>Add your business</h2>
+    <p><label>Stops per week<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— please choose —</option><option>Up to 25</option><option>25–60</option><option>60–120</option><option>More than 120</option></select></label></p>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Start</a>
   </section>
-</main>
-
-<div class="footer ground-surface" role="contentinfo">
-  <div class="wrap">
-    <div class="grid">
-      <p class="footer__mark span-4">Route Ticket</p>
-      <p class="span-6 start-7">Visit records and invoices for your business. The operator remains responsible for label use and the records their state requires.</p>
-    </div>
-    <div class="footer__legal"><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></div>
-  </div>
 </div>
 
-<script>
-(function () {
-  var still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (still) return;
-  /* the hero's one entrance (taste motion.css): hold the words, then let them fade in */
-  var de = document.documentElement;
-  de.classList.add('m-enter');
-  void de.offsetWidth;
-  requestAnimationFrame(function () { requestAnimationFrame(function () { de.classList.add('m-enter-done'); }); });
-  /* the live word: two rounds, then it rests on the first word */
-  var w = document.querySelector('.ly-word');
-  if (w) {
-    var words = w.getAttribute('data-words').split('|'), cur = w.firstElementChild, i = 0, steps = words.length * 2;
-    for (var k = 1; k < words.length; k++) { var s = document.createElement('span'); s.textContent = words[k]; s.className = 'is-next'; s.setAttribute('aria-hidden', 'true'); w.appendChild(s); }
-    var spans = w.children;
-    var t = setInterval(function () {
-      var next = spans[(i + 1) % spans.length];
-      spans[i % spans.length].className = 'is-out';
-      next.className = '';
-      i++;
-      setTimeout(function () { for (var j = 0; j < spans.length; j++) if (spans[j] !== next) spans[j].className = 'is-next'; }, 650);
-      if (i >= steps) clearInterval(t);
-    }, 2200);
-  }
-  /* liquid type: the close headline ripples where the pointer crosses it and settles within a second */
-  var h = document.querySelector('[data-liquid]'), f = document.getElementById('liquid');
-  if (h && f && matchMedia('(hover: hover)').matches) {
-    var map = f.querySelector('feDisplacementMap'), turb = f.querySelector('feTurbulence'), amt = 0, raf = 0;
-    var tick = function () {
-      amt *= 0.9;
-      map.setAttribute('scale', amt.toFixed(1));
-      if (amt > 0.3) raf = requestAnimationFrame(tick); else { amt = 0; raf = 0; h.style.filter = ''; }
-    };
-    h.addEventListener('pointermove', function (e) {
-      var r = h.getBoundingClientRect();
-      turb.setAttribute('baseFrequency', (0.008 + 0.01 * (e.clientX - r.left) / r.width).toFixed(4) + ' ' + (0.02 + 0.02 * (e.clientY - r.top) / r.height).toFixed(4));
-      amt = Math.min(28, amt + 4);
-      h.style.filter = 'url(#liquid)';
-      if (!raf) raf = requestAnimationFrame(tick);
-    });
-  }
-})();
-</script>
+<footer><div class="wrap">
+  <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
+  <p class="muted">Visit records and invoices for your business. The operator remains responsible for label use and the records their state requires.</p>
+</div></footer>
+
 </body>
 </html>
