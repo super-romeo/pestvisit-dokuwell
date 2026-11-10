@@ -2,15 +2,19 @@
    This file holds only: 1) the :root block start.mjs printed for the deal, 2) two lines that undo the shared
    base stylesheet where it clashes, 3) page CSS the Taste references ask for (a panel's --p-h, the app-frame). */
 
-/* 1. the deal: start.mjs css --page software --palette mint-pink-accounts --type schibsted --radius soft */
+/* 1. the deal: start.mjs css --page software --radius soft, the values set to the smokes' house palette and one
+   font, Inter (rule СМ-04, brief 4: the same colours and font on every variant, light everywhere): the inverse
+   side and the lit ground are light too, so no block on the page is dark or tinted */
 :root {
-  --p-bg: #f8f8f8; --p-surface: #eeeeee; --p-ink: #0a0a0a; --p-muted: #6a6a6a;
-  --p-accent: #1f6b3a; --p-accent-ink: #ffffff; --p-action: #1f6b3a; --p-action-ink: #ffffff;
-  --p-inv-bg: #0a0a0a; --p-inv-surface: #171717; --p-inv-ink: #f8f8f8; --p-inv-muted: #939393;
-  --p-inv-accent: #1f6b3a; --p-inv-accent-ink: #ffffff; --p-inv-action: #1f6b3a; --p-inv-action-ink: #ffffff;
-  --font-display: "Schibsted Grotesk", system-ui, sans-serif;
-  --font-text: "Schibsted Grotesk", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --p-bg: #fcfcfc; --p-surface: #f7f8f9; --p-ink: #05080b; --p-muted: #5c646f;
+  --p-accent: #006acf; --p-accent-ink: #ffffff; --p-action: #006acf; --p-action-ink: #ffffff;
+  --p-inv-bg: #f7f8f9; --p-inv-surface: #ffffff; --p-inv-ink: #05080b; --p-inv-muted: #5c646f;
+  --p-inv-accent: #006acf; --p-inv-accent-ink: #ffffff; --p-inv-action: #006acf; --p-inv-action-ink: #ffffff;
+  --ground-bg: #f7f8f9; --ground-surface: #ffffff; --ground-ink: #05080b; --ground-muted: #5c646f; --ground-accent: #006acf;
+  --card: #ffffff; --line: #dfe1e5;
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-text: "Inter", system-ui, sans-serif;
+  --font-mono: "Inter", system-ui, sans-serif;
   --display-weight: 400;
   --display-tracking: -0.035em;
   --display-tracking-xl: -0.042em;
@@ -20,6 +24,9 @@
 /* 2. the shared base stylesheet: .wrap is capped at 920px and every .btn gets a 14px top margin */
 .wrap { max-width: none; }
 .btn { margin: 0; }
+/* the drawn avatars: the palette's soft accent instead of the kit's five hues; the focus ring in its own blue */
+.ui-avatar[data-tone] { background: #d6efff; color: #05080b; }
+:focus-visible { outline-color: #0086dd; }
 
 /* 3. page CSS. The feature tiles' panel height (system.md: one --p-h per card group; the phone's 180px is
    system.css's), and the app-frame recipe (sections-library.md, app-frame), as written there */
